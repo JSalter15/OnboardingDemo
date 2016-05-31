@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoggedInViewController" customModule="OnboardingDemo" customModuleProvider="target">
+            <connections>
+                <outlet property="greetingLabel" destination="RU0-d7-tTL" id="RZy-H8-dDC"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RU0-d7-tTL">
+                    <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hDA-b9-Gga">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <state key="normal" title="Log out"/>
+                    <connections>
+                        <action selector="logoutTapped:" destination="-1" eventType="touchUpInside" id="5ra-fR-nD3"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="RU0-d7-tTL" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6Z7-k8-I8w"/>
+                <constraint firstAttribute="bottom" secondItem="hDA-b9-Gga" secondAttribute="bottom" constant="37" id="N3K-ao-vbf"/>
+                <constraint firstItem="hDA-b9-Gga" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="nw1-NJ-JcR"/>
+                <constraint firstItem="RU0-d7-tTL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="104" id="xey-S9-30V"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="RU0-d7-tTL"/>
+                    <exclude reference="hDA-b9-Gga"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="6Z7-k8-I8w"/>
+                    <exclude reference="xey-S9-30V"/>
+                    <exclude reference="N3K-ao-vbf"/>
+                    <exclude reference="nw1-NJ-JcR"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="RU0-d7-tTL"/>
+                    <include reference="hDA-b9-Gga"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="6Z7-k8-I8w"/>
+                    <include reference="xey-S9-30V"/>
+                    <include reference="N3K-ao-vbf"/>
+                    <include reference="nw1-NJ-JcR"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
